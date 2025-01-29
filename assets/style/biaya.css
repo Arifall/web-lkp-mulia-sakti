@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+main {
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+}
+.logo a{
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a img {
+    width: 70px;
+    height: 55px;
+    padding-right: 10px;
+    border-right: 2px #2b38aa solid;
+}
+.logo > a h1 {
+    font-size: 16px;
+    font-weight: 550;
+    color: #2b38aa;
+    padding-left: 10px;
+}
+.logo {
+    display: flex;
+    justify-content:space-between;
+    gap: 0.4rem;
+    align-items: center;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    width: 20px;
+    height: 30px;
+    position: relative;
+    right: 10px;
+  }
+  
+  .bar {
+    background-color: #2b38aa;
+    height: 2px;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+    width: 100%;
+    border-radius: 999px;
+  }
+nav {
+    padding: 0;
+    margin: 0;
+}
+nav li{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+header {
+    width: 100%;
+    height: 13vh;
+    padding-left: 20px;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 9999;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding-right: 20px;
+    position: relative;
+    height: auto; /* Menggunakan tinggi otomatis di desktop */
+    flex-direction: row; /* Menampilkan menu secara horizontal di desktop */
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease;
+}
+.menu.active {
+    height: 180px;
+}
+
+nav  a {
+    text-decoration: none;
+    padding: 20px;
+    color: #4644af;
+
+}
+nav a:hover {
+    color: red;
+    transition: all 0.3s ease-in-out;
+}
+/*konten utama-start*/
+.card {
+    width: 430px;
+    height: 400px;
+    background-color: wheat;
+    text-align: center;
+}
+.card h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.card h3 {
+    padding-top: 20px;
+    font-size: 45px;
+}
+.card .ket {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-bottom: 3rem;
+    border-bottom: 1px dashed black;
+    
+}
+.card .kata-kata {
+    padding-top: 20px;
+}
+.card a button {
+   padding: 8px 10px;
+   font-size: 16px;
+   font-family: impact;
+   letter-spacing: 1.5px;
+   border:2px solid #3f7fdf;
+   color: #3f7fdf;
+   background-color: rgb(255, 230, 0);
+   
+}
+/*konten utama-finish*/
+footer {
+    background-color: #0a4091;
+    width: 100%;
+    margin-top: 70px;
+}
+footer article img {
+    width:80px;
+}
+footer article {
+    display: flex;
+    justify-content:left;
+    align-items:flex-start;
+    flex-wrap: wrap;
+}
+footer .hakcipta {
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.daftar-footer { 
+   color: white;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   margin-right: 30px;
+   margin-left: 60px;
+   
+}
+.daftar-footer h1{
+    font-size: 22px;
+    line-height: 0.8cm;
+}
+.daftar-footer h2 {
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+.daftar-footer p {
+    font-size: 14px;
+    line-height: 0.7cm;
+}
+.daftar-footer ul {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+.daftar-footer li a{
+    text-decoration-line: none;
+    color: #ec3f3f;
+}
+.daftar-footer li a:hover {
+    color: #3f7fdf;
+}
+@media screen and (max-width: 1200px) {
+    header {
+        height: 100px;
+    }
+    
+    .daftar-footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 30%;
+    }
+    footer article {
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width:768px) {
+    .logo a h1 {
+        font-size: 12px;
+    }
+    /* navbar untuk tampilan mobile -start*/
+    nav li {
+        width: 100%;
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    nav a {
+        padding: 11px 422px 11px 20px;
+    }
+    nav a:hover {
+        background-color: #224579;
+        color: white;
+    }
+    header {
+        height: 65px;
+    }
+    header a img {
+        width: 55px;
+        height: 40px;
+    }
+    .menu {
+     position: absolute;
+    top: 60px;
+    padding-right: 0;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    height: 0;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:flex-start;
+    transition: height 0.3s ease;
+    overflow: hidden;
+    box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.2);
+    }
+    .menu-icon {
+        display: block;
+      }
+    
+      .menu-icon.open .bar1 {
+        transform: rotate(45deg);
+        position: absolute;
+        top: 5px;
+      }
+    
+      .menu-icon.open .bar2 {
+        opacity: 0;
+      }
+    
+      .menu-icon.open .bar3 {
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 5px;
+      }
+      /* navbar finish*/
+    footer article {
+        flex-direction: column;
+    }
+    .daftar-footer {
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+    }
+    .daftar-footer p, li{
+        font-size: 10px;
+    }
+    .daftar-footer h1 {
+        font-size: 16px;
+    }
+    .daftar-footer h2 {
+        font-size: 14px;
+    }
+    .hakcipta p {
+        font-size: 9px;
+    }
+}

@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+main {
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+}
+.logo a{
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a img {
+    width: 70px;
+    height: 55px;
+    padding-right: 10px;
+    border-right: 2px #2b38aa solid;
+}
+.logo > a h1 {
+    font-size: 16px;
+    font-weight: 550;
+    padding-left: 10px;
+    color: #2b38aa;
+}
+.logo {
+    display: flex;
+    justify-content:space-between;
+    gap: 0.4rem;
+    align-items: center;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    width: 20px;
+    height: 30px;
+    position: relative;
+    right: 10px;
+  }
+  
+  .bar {
+    background-color: #2b38aa;
+    height: 2px;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+    width: 100%;
+    border-radius: 999px;
+  }
+nav {
+    padding: 0;
+    margin: 0;
+}
+nav li{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+header {
+    width: 100%;
+    height: 13vh;
+    padding-left: 20px;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 9999;
+    background-color: white;
+    position: sticky;
+    top: 0;
+
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding-right: 20px;
+    position: relative;
+    height: auto; /* Menggunakan tinggi otomatis di desktop */
+    flex-direction: row; /* Menampilkan menu secara horizontal di desktop */
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease;
+}
+.menu.active {
+    height: 180px;
+}
+
+nav  a {
+    text-decoration: none;
+    padding: 20px;
+    color: #4644af;
+
+}
+nav a:hover {
+    color: red;
+    transition: all 0.3s ease-in-out;
+}
+/*konten utama-start*/
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/img/background-computer.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding-right: 80px;
+}
+.banner article {
+    width: 700px;
+   
+    background-color: #2269d4d0;
+    color: white;
+    
+    padding: 55px 50px 50px 50px;
+    
+}
+.banner h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.banner p {
+    padding-top: 10px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 0.6cm;
+}
+.countainer {
+    background-color: rgb(5, 5, 5) ;
+    padding: 0px 70px 50px 70px;
+    width: 100%;
+    padding-left: 70px;
+    padding-bottom: 50px;
+    box-shadow: 0px -70px 70px rgb(0, 0, 0);
+}
+.countainer h1 {
+    color: #f8d304;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.countainer p {
+    color: white;
+    margin-bottom: 50px;
+    line-height: 0.7cm;
+}
+.card-countainer-1, .card-countainer-2 {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: white;
+    width: 550px;
+    padding: 20px 50px 20px 50px;
+}
+.card h2 {
+    color: #3e6bad;
+    font-weight: 500px;
+    font-size: 23px;
+}
+.card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 0.8cm;
+}
+.card ul {
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+button {
+    width: 230px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    background-color: #f8d304;
+    color: rgb(255, 240, 240);
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color : #3e6bad;
+    border: 3px solid #f8d304;
+}
+/*konten utama-finish*/
+footer {
+    background-color: #0a4091;
+    width: 100%;
+    margin-top: 70px;
+}
+footer article img {
+    width:80px;
+}
+footer article {
+    display: flex;
+    justify-content:left;
+    align-items:flex-start;
+    flex-wrap: wrap;
+}
+footer .hakcipta {
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.daftar-footer { 
+   color: white;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   margin-right: 30px;
+   margin-left: 60px;
+   
+}
+.daftar-footer h1{
+    font-size: 22px;
+    line-height: 0.8cm;
+}
+.daftar-footer h2 {
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+.daftar-footer p {
+    font-size: 14px;
+    line-height: 0.7cm;
+}
+.daftar-footer ul {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+.daftar-footer li a{
+    text-decoration-line: none;
+    color: #ec3f3f;
+}
+.daftar-footer li a:hover {
+    color: #3f7fdf;
+}
+@media screen and (max-width: 1200px) {
+    header {
+        height: 100px;
+    }
+    .banner {
+        height: 45vh;
+        padding-right: 0;
+        justify-content:center;
+        align-items: end;
+        padding-bottom: 30px;
+    }
+    .card {
+        width: 315px;
+    }
+    .daftar-footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 30%;
+    }
+    footer article {
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width:768px) {
+    .logo a h1 {
+        font-size: 12px;
+    }
+    /* navbar untuk tampilan mobile -start*/
+    nav li {
+        width: 100%;
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    nav a {
+        padding: 11px 422px 11px 20px;
+    }
+    nav a:hover {
+        background-color: #224579;
+        color: white;
+    }
+    header {
+        height: 65px;
+    }
+    header a img {
+        width: 55px;
+        height: 40px;
+    }
+    .menu {
+     position: absolute;
+    top: 60px;
+    padding-right: 0;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    height: 0;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:flex-start;
+    transition: height 0.3s ease;
+    overflow: hidden;
+    box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.2);
+    }
+    .menu-icon {
+        display: block;
+      }
+    
+      .menu-icon.open .bar1 {
+        transform: rotate(45deg);
+        position: absolute;
+        top: 5px;
+      }
+    
+      .menu-icon.open .bar2 {
+        opacity: 0;
+      }
+    
+      .menu-icon.open .bar3 {
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 5px;
+      }
+      /* navbar finish*/
+    .banner {
+        padding-right: 0px;
+        height: 70vh;
+    }
+    .banner article {
+        width: 400px;
+        height: 450px;
+        padding: 40px 30px 20px 30px;
+        
+    }
+    .countainer {
+        padding: 0px 20px 40px 20px;
+    }
+    .banner h1 {
+        font-size: 30px;
+    }
+    .countainer h1 {
+        font-size: 30px;
+    }
+    .card {
+        padding: 20px 20px 20px 20px;
+       
+    }
+    .card h2 {
+        font-size: 23px;
+    }
+    .card ul li {
+        font-size: 15px;
+    }
+    footer article {
+        flex-direction: column;
+    }
+    .daftar-footer {
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+    }
+    .daftar-footer p, li{
+        font-size: 10px;
+    }
+    .daftar-footer h1 {
+        font-size: 16px;
+    }
+    .daftar-footer h2 {
+        font-size: 14px;
+    }
+    .hakcipta p{
+        font-size: 9px;
+    }
+}
