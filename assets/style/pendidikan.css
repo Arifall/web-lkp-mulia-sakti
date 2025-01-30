@@ -123,7 +123,6 @@ nav a:hover {
 }
 .banner article {
     width: 700px;
-   
     background-color: #2269d4d0;
     color: white;
     
@@ -268,7 +267,6 @@ footer .hakcipta {
         height: 45vh;
         padding-right: 0;
         justify-content:center;
-        align-items: end;
         padding-bottom: 30px;
     }
     .card {
@@ -350,8 +348,7 @@ footer .hakcipta {
         height: 70vh;
     }
     .banner article {
-        width: 400px;
-        height: 450px;
+        width: 500px;
         padding: 40px 30px 20px 30px;
         
     }
@@ -392,5 +389,38 @@ footer .hakcipta {
     }
     .hakcipta p{
         font-size: 9px;
+    }
+}
+@media screen and (max-width:428px) {
+    .banner {
+        padding-top: 30px;
+    }
+    .banner article {
+        width: 360px;
+        padding: 25px 20px;
+        text-align: center;
+        
+    }
+    .banner h1 {
+        font-size: 27px;
+    }
+    .banner p {
+        text-align: center;
+    }
+}
+@media screen and (width: 320px) {
+    .banner {
+        height: auto;
+    }
+    .banner article {
+        width: 315px;
+    }
+    .banner h1 {
+        font-size: 25px;
+        line-height: 0.7cm;
+    }
+    .banner p {
+        line-height: 0.5cm;
+        font-size: 13px;
     }
 }
