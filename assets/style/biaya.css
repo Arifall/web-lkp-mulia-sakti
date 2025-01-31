@@ -112,46 +112,53 @@ nav a:hover {
 /*konten utama-start*/
 .content {
     background-color: white;
+    background-size: 100% 100%;
     padding-bottom: 40px;
 }
 .content h1 {
     text-align: center;
+    font-size: 50px;
     padding-top: 20px;
     padding-bottom: 40px;
 }
 .container {
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
     padding-left: 10px;
     padding-right: 10px;
 }
 .card {
-    width: 400px;
+    width: 320px;
     height: 400px;
-    background-color: white;
+    background-color: #faf9f6;
     text-align: center;
     box-shadow: 5px 5px #161616;
 }
 .card h2 {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #ffdc19;
+    background-color: #ffda09;
+    color: black;
     font-weight: 580;
 }
 .card h3 {
     padding-top: 20px;
     font-size: 45px;
+    color: #ecc800;
 }
 .card .ket {
     margin-right: 20px;
     margin-left: 20px;
     padding-bottom: 3rem;
     border-bottom: 1px dashed black;
+    color: black;
     
 }
 .card .kata-kata {
     padding: 20px 30px 40px 30px;
+    color: black;
 }
 .card a button {
    padding: 9px 15px;
@@ -160,7 +167,7 @@ nav a:hover {
    font-family: 'tahoma';
    letter-spacing: 1.5px;
    color: white;
-   background-color: #0a28af;
+   background-color: #0a4091;
    
 }
 .card a button:hover {
