@@ -110,16 +110,34 @@ nav a:hover {
     transition: all 0.3s ease-in-out;
 }
 /*konten utama-start*/
-.card {
-    width: 430px;
-    height: 400px;
-    background-color: wheat;
+.content {
+    background-color: white;
+    padding-bottom: 40px;
+}
+.content h1 {
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 5px 5px #161616;
 }
 .card h2 {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid black;
+    background-color: #ffdc19;
+    font-weight: 580;
 }
 .card h3 {
     padding-top: 20px;
@@ -133,17 +151,20 @@ nav a:hover {
     
 }
 .card .kata-kata {
-    padding-top: 20px;
+    padding: 20px 30px 40px 30px;
 }
 .card a button {
-   padding: 8px 10px;
+   padding: 9px 15px;
    font-size: 16px;
-   font-family: impact;
+   border: none;
+   font-family: 'tahoma';
    letter-spacing: 1.5px;
-   border:2px solid #3f7fdf;
-   color: #3f7fdf;
-   background-color: rgb(255, 230, 0);
+   color: white;
+   background-color: #0a28af;
    
+}
+.card a button:hover {
+    background-color: #3f7fdf;
 }
 /*konten utama-finish*/
 footer {
