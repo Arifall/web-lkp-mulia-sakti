@@ -140,7 +140,7 @@ nav a:hover {
     line-height: 0.6cm;
 }
 .countainer {
-    background-color: rgb(5, 5, 5) ;
+    background-color: #1b1b1b ;
     padding: 0px 70px 50px 70px;
     width: 100%;
     padding-left: 70px;
@@ -167,7 +167,7 @@ nav a:hover {
     flex-wrap: wrap;
 }
 .card {
-    background-color: white;
+    background-color: whitesmoke;
     width: 550px;
     padding: 20px 50px 20px 50px;
 }
@@ -192,8 +192,8 @@ button {
     font-size: 15px;
     font-weight: 500;
     border: none;
-    background-color: #f8d304;
-    color: rgb(255, 240, 240);
+    background-color: #fffb04;
+    color: black;
     margin-top: 15px;
     cursor: pointer;
 }
