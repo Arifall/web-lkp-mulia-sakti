@@ -111,11 +111,16 @@ nav a:hover {
 }
 /*konten utama-start*/
 .content {
-    background-color: white;
-    background-size: 100% 100%;
+    background: repeating-linear-gradient(
+    45deg,
+    #f3e852 2px,
+    #f3e852 2px,
+    white 3px,
+    white 3px);
     padding-bottom: 40px;
 }
 .content h1 {
+    color: rgb(94, 73, 36);
     text-align: center;
     font-size: 50px;
     padding-top: 20px;
@@ -132,28 +137,28 @@ nav a:hover {
 .card {
     width: 320px;
     height: 400px;
-    background-color: #faf9f6;
+    background-color: white;
     text-align: center;
-    box-shadow: 5px 5px #161616;
+    box-shadow: -6px 6px #303030;
 }
 .card h2 {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #ffda09;
     color: black;
-    font-weight: 580;
+    font-weight: 700;
 }
 .card h3 {
     padding-top: 20px;
-    font-size: 45px;
-    color: #ecc800;
+    font-size: 43px;
+    color: black;
 }
 .card .ket {
     margin-right: 20px;
     margin-left: 20px;
     padding-bottom: 3rem;
     border-bottom: 1px dashed black;
-    color: black;
+    color: #646363;
     
 }
 .card .kata-kata {
@@ -162,12 +167,14 @@ nav a:hover {
 }
 .card a button {
    padding: 9px 15px;
-   font-size: 16px;
+   font-size: 15px;
+   font-weight: 600;
    border: none;
-   font-family: 'tahoma';
+   font-family:"Segoe UI";
    letter-spacing: 1.5px;
    color: white;
-   background-color: #0a4091;
+   background-color: #3A10E5;
+   cursor: pointer;
    
 }
 .card a button:hover {
@@ -305,6 +312,12 @@ footer .hakcipta {
         top: 5px;
       }
       /* navbar finish*/
+    .content {
+        background: repeating-linear-gradient(
+    45deg,
+    #f3e852 1px,
+    white 3px);
+    }
     footer article {
         flex-direction: column;
     }
