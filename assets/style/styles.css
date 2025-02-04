@@ -152,11 +152,47 @@ nav a:hover {
     color: white;
     border: 2px solid white;
 }
+.keunggulan {
+    background-color: #030e1f;
+    color: whitesmoke;
+    
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+.keunggulan h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.keunggulan article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3rem;
+}
+.column {
+    width: 430px;
+    height: 160px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+}
+.column h2 {
+    line-height: 1.5cm;
+    font-size: 25px;
+}
+.column p {
+    font-size: 16px;
+}
+.column i {
+    font-size: 40px;
+}
 /*konten utama-finish*/
 footer {
     background-color: #0a4091;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 footer article img {
     width:80px;

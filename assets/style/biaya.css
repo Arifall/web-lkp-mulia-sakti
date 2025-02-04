@@ -113,26 +113,29 @@ nav a:hover {
 .content {
     background: repeating-linear-gradient(
     45deg,
-    #f3e852 2px,
-    #f3e852 2px,
+    #ebe0e6 2px,
+    #e4e3e4 2px,
     white 3px,
     white 3px);
     padding-bottom: 40px;
 }
 .content h1 {
-    color: rgb(94, 73, 36);
+    color: #b82e16;
     text-align: center;
     font-size: 50px;
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 .container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 20px 10px 40px 10px;
+    background: radial-gradient(circle, #131527 10%, transparent 10%) 0 0,
+    radial-gradient(circle, #ff0000 10%, transparent 10%) 10px 10px;
+    background-size: 20px 20px; /* Ukuran grid titik lebih kecil dan rapat */
+    background-repeat: repeat;
 }
 .card {
     width: 320px;
@@ -175,10 +178,18 @@ nav a:hover {
    color: white;
    background-color: #3A10E5;
    cursor: pointer;
+   box-shadow:0 0 10px #00ccff99;
+   transition: all 0.3s ease;
    
 }
 .card a button:hover {
     background-color: #3f7fdf;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px #5481ff;
+}
+.card a button:active {
+    box-shadow: 0 0 30px rgba(0, 255, 0, 1.2);
+      transform: scale(0.98);
 }
 /*konten utama-finish*/
 footer {
@@ -317,6 +328,12 @@ footer .hakcipta {
     45deg,
     #f3e852 1px,
     white 3px);
+    }
+    .container {
+        background: radial-gradient(circle, #050527 6%, transparent 6%) 0 0,
+        radial-gradient(circle, #ff0000 6%, transparent 6%) 10px 10px;
+        background-size: 20px 20px; /* Ukuran grid titik lebih kecil dan rapat */
+        background-repeat: repeat;
     }
     footer article {
         flex-direction: column;
