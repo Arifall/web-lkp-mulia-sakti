@@ -125,6 +125,7 @@ nav a:hover {
     font-size: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: arial;
 }
 .container {
     display: flex;
@@ -326,7 +327,7 @@ footer .hakcipta {
     .content {
         background: repeating-linear-gradient(
     45deg,
-    #f3e852 1px,
+    #ebe0e6 1px,
     white 3px);
     }
     .container {
