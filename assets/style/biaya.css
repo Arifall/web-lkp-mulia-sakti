@@ -113,14 +113,14 @@ nav a:hover {
 .content {
     background: repeating-linear-gradient(
     45deg,
-    #ebe0e6 2px,
+    #e0ebeb 2px,
     #e4e3e4 2px,
     white 3px,
     white 3px);
     padding-bottom: 40px;
 }
 .content h1 {
-    color: #b82e16;
+    color: #08083b;
     text-align: center;
     font-size: 50px;
     padding-top: 20px;
@@ -143,31 +143,31 @@ nav a:hover {
     height: 400px;
     background-color: white;
     text-align: center;
-    box-shadow: -6px 6px #303030;
+    box-shadow: -6px 6px #08083b;
 }
 .card h2 {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #ffda09;
-    color: black;
+    color: #08083b;
     font-weight: 700;
 }
 .card h3 {
     padding-top: 20px;
     font-size: 43px;
-    color: black;
+    color: #08083b;
 }
 .card .ket {
     margin-right: 20px;
     margin-left: 20px;
     padding-bottom: 3rem;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px dashed #040424;
     color: #646363;
     
 }
 .card .kata-kata {
     padding: 20px 30px 40px 30px;
-    color: black;
+    color: #050527;
 }
 .card a button {
    padding: 9px 15px;
