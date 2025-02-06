@@ -13,9 +13,12 @@ body {
 
 }
 main {
-    background-color: whitesmoke;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .logo a{
     text-decoration: none;
@@ -111,159 +114,69 @@ nav a:hover {
 }
 /*konten utama-start*/
 .content {
-    padding: 0;
-    margin: 0;
+    width: 65%;
+    padding: 70px 50px 10px 50px;
+    
 }
-.banner {
-    width: 100%;
-    height: 90vh;
-    background-image: url(/assets/img/kertas-biru.png);
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    color: white;
-    padding-left: 60px;
-}
-.banner h1 {
-    font-size: 70px;
-    font-weight: 500;
-}
-.banner p {
-    font-size: 18px;
-    width: 800px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-.banner a button {
-    width: 350px;
-    height: 30px;
-    background-color: yellow;
-    color: black;
-    border: 2px solid black;
-    border-radius: 20px;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 2px;
-}
-.banner a button:hover {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-}
-.keunggulan {
-    background-color: #030e1f;
-    color: whitesmoke;
-
-    height: auto;
-    padding-top: 70px;
-    padding-bottom: 40px;
-}
-.keunggulan h1 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-.keunggulan article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 3rem;
-}
-.column {
-    width: 430px;
-    height: 160px;
-    margin-bottom: 40px;
-    padding-left: 10px;
-}
-.column h2 {
-    line-height: 1.5cm;
-    font-size: 25px;
-}
-.column p {
-    font-size: 16px;
-}
-.column i {
+.content h1 {
     font-size: 40px;
+    margin-bottom: 20px;
 }
-.peta {
-    height: auto;
-    background-color: #030e1f;
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 60px;
-    padding-top: 30px;
+.content h1 .kata {
+    color: #f7a000;
 }
-.peta h1 {
-    text-align: center;
-    font-size: 27px;
-    max-width: 900px;
-    margin-bottom: 30px;
+.content p {
+    font-size: 23px;
+    font-weight: 500;
 }
-.panah {
+aside {
+    width: 35%;
+    padding: 70px 70px 5px 20px;
+}
+aside article {
+    border: 1px solid grey;
+    padding: 30px 20px 20px 20px;
+}
+aside h1 {
+    font-size: 40px;
+    color:#0a4091;
+}
+aside h2 {
+    color: #f7a000;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+aside p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+aside .kontak {
+    font-size: 19px;
     font-weight: 600;
-    font-size: 20px;
-    padding-right: 20px;
+    margin-bottom: 0px;
 }
-.nomor {
-    width: 35px;
-    height: 35px;
-    border: 2px solid whitesmoke;
-    border-radius: 999px;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-}
-.daftar a i {
-    font-size: 30px;
-    margin-right: 14px;
-    
-}
-.daftar {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-}
-.daftar li {
-    width: 700px;
-    height: 60px;
+aside a button {
+    width: 270px;
+    min-width: 150px;
+    height: 40px;
     font-size: 18px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.daftar li a {
-    display: flex;
-    align-items: center;
-    
-    background-color: #3b3c55;
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 17px;
     font-weight: 600;
-    width: 92%;
-    height: 100%;
-    padding-left: 30px;
-    border: 2px solid whitesmoke;
+    border: none;
+    background-color: #313131;
+    color: white;
+    cursor: pointer;
 }
-.daftar a :nth-child(2) {
-    margin-left: auto;
-}
-.daftar li a:hover {
-    color: #3b3c55;
-    background-color: whitesmoke;
+aside a button:hover {
+    background-color: #0a4091;
+    box-shadow: -4px 4px #05064b;
+    transition: all 0.3s ease-in-out;
 }
 /*konten utama-finish*/
 footer {
     background-color: #0a4091;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 footer article img {
     width:80px;
@@ -319,17 +232,14 @@ footer .hakcipta {
     header {
         height: 100px;
     }
-    .banner {
-        height: 45vh;
-        padding-right: 0;
-        align-items: end;
-        padding-bottom: 30px;
-        padding-left: 0;
-        justify-content: baseline;
-        align-items: center;
+    aside {
+        padding-right: 10px;
     }
-    .banner h1 {
-        font-size: 50px;
+    aside a button {
+        max-width: 200px;
+    }
+    aside .kontak {
+        font-size: 17px;
     }
     .daftar-footer {
         padding-top: 40px;
@@ -402,22 +312,16 @@ footer .hakcipta {
         top: 5px;
       }
       /* navbar finish*/
-      .banner {
-        padding-left: 0;
-        justify-content: baseline;
-        align-items: center;
-
+      main {
+        flex-direction: column;
       }
-      .banner h1 {
-        font-size: 50px;
+      .content {
+        padding: 30px 20px 20px 20px;
+        width: 100%;
       }
-      .banner p {
-        font-size: 16px;
-        width: 520px;
-      }
-      .banner a button {
-        width: 250px;
-        font-size: 12px;
+      aside {
+        width: 100%;
+        padding: 40px 20px 20px 20px;
       }
     footer article {
         flex-direction: column;
@@ -439,35 +343,12 @@ footer .hakcipta {
         font-size: 9px;
     }
 }
-@media screen and (max-width: 428px) {
-    .banner h1 {
-        font-size: 25px;
-    }
-    .banner p {
-        font-size: 14px;
-        width: 350px;
-    }
-    .daftar li {
-        width: 380px;
-        gap: 15px;
-    }
-    .peta h1 {
-        font-size: 23px;
-    }
-
-}
 @media screen and (max-width: 320px) {
-    .banner {
-        height: 85vh;
+    .content h1 {
+        font-size: 28px;
+        
     }
-    .banner p {
-        width: 300px;
-        font-size: 12px;
-    }
-    .daftar li {
-        width: 300px;
-    }
-    .daftar li a {
-        font-size: 15px;
+    .content p {
+        font-size: 18px;
     }
 }
