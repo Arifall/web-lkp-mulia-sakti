@@ -150,7 +150,7 @@ nav a:hover {
   }
   
   .button-container {
-    margin-bottom: 0px; /* Memberikan jarak antara tombol dan kotaknya */
+    margin-bottom: 0px;
   }
   
   button {
@@ -158,7 +158,7 @@ nav a:hover {
     border: none;
     background-color: transparent;
     color: #0a4091;
-    font-family: 'quicksand', sans-serif;
+    font-family: 'timesnewroman';
     font-weight: 700;
     padding: 1px;
     font-size: 21px;
@@ -171,6 +171,7 @@ nav a:hover {
   
   .infoBox {
     width: 270px;
+    height: auto;
     margin-top: 10px;
     padding: 15px;
     border: 1px solid #ccc;
@@ -196,6 +197,8 @@ nav a:hover {
   /* Menampilkan kotak informasi saat diperlukan */
   .infoBox.show {
     display: block;
+    
+    
   }
 
 .visi-misi-1, .visi-misi-2 {
