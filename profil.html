@@ -38,17 +38,38 @@
                 <h2>Selamat datang di<strong>#LKPMasaKini!</strong></h2>
             </div>
             <div class="profil">
-                <div class="profil-nav">
-                    <ul>
-                        <li class="arrow" id="toggleButton"><a href="#">Pimpinan LKP Mulia Sakti</a>
-                        </li>
-                        <li class="arrow"><a href="#">Instruktur</a></li>
-                        <li class="arrow"><a href="#">Alumni</a></li>
-                    </ul>
-                </div>
+                <div class="buttons">
+                    <div class="button-container">
+                      <button id="showInfoBtn1"><span class="panah">&#9002;</span> Pimpinan LKP Mulia Sakti</button>
+                      <div id="infoBox1" class="infoBox hidden">
+                        <img src="foto1.jpg" alt="Foto Profil 1" id="profilePic">
+                        <h3>Nama: Afrizal S.Kom</h3>
+                      </div>
+                    </div>
                 
-                <p>Kami mengundang Anda untuk mengunjungi situs web kami untuk mendapatkan informasi yang lebih lengkap tentang keunggulan kurikulum, desain pengajaran, penelitian, serta berbagai aktivitas yang ditawarkan oleh beragam program pendidikan di Jurusan Akuntansi FBE UII, termasuk Program Diploma III Akuntansi, Program Sarjana Akuntansi (Bisnis dan Teknologi) yang ditawarkan melalui kelas reguler maupun International Undergraduate Program, serta Program Magister Akuntansi. Jika Anda membutuhkan bantuan, jangan ragu untuk menghubungi kami. Staf kami akan dengan senang hati menyambut Anda menjadi bagian dari Jurusan Akuntansi, Fakultas Bisnis dan Ekonomika, Universitas Islam Indonesia.</p>
-            </div>
+                    <div class="button-container">
+                      <button id="showInfoBtn2"><span class="panah">&#9002;</span>Instruktur</button>
+                      <div id="infoBox2" class="infoBox hidden">
+                        <img src="foto2.jpg" alt="Foto Profil 2" id="profilePic">
+                        <h3>Nama: H.Suhaimi S.Pd</h3>
+                      </div>
+                    </div>
+                
+                    <div class="button-container">
+                      <button id="showInfoBtn3"><span class="panah">&#9002;</span>Alumni</button>
+                      <div id="infoBox3" class="infoBox hidden">
+                        <h3>Alumni LPK Mulia Sakti</h3>
+                        <div id="animatedNumber">1</div>
+                        <p>ALUMNI</p>
+                      </div>
+                    </div>
+                  </div>
+                 <div class="text-profil">
+                    <p>Kami mengundang Anda untuk mengunjungi situs web kami untuk mendapatkan informasi yang lebih lengkap tentang keunggulan kurikulum, desain pengajaran, penelitian, serta berbagai aktivitas yang ditawarkan oleh beragam program pendidikan di Jurusan Akuntansi FBE UII, termasuk Program Diploma III Akuntansi, Program Sarjana Akuntansi (Bisnis dan Teknologi) yang ditawarkan melalui kelas reguler maupun International Undergraduate Program, serta Program Magister Akuntansi. Jika Anda membutuhkan bantuan, jangan ragu untuk menghubungi kami. Staf kami akan dengan senang hati menyambut Anda menjadi bagian dari Jurusan Akuntansi, Fakultas Bisnis dan Ekonomika, Universitas Islam Indonesia.</p>
+                 </div>
+            </div>   
+                
+
             <div class="countainer">
                 <h1>Visi, Misi & Tujuan</h1>
                 <article class="visi-misi-1">
@@ -176,6 +197,52 @@
   navLinks.classList.toggle('active'); // Menampilkan atau menyembunyikan menu
   menuIcon.classList.toggle('open');   // Mengubah ikon 
 }
+
+// script.js
+document.getElementById('showInfoBtn1').addEventListener('click', function() {
+  toggleInfoBox('infoBox1');
+});
+
+document.getElementById('showInfoBtn2').addEventListener('click', function() {
+  toggleInfoBox('infoBox2');
+});
+
+document.getElementById('showInfoBtn3').addEventListener('click', function() {
+  toggleInfoBox('infoBox3');
+});
+
+// Fungsi untuk menampilkan dan menyembunyikan kotak informasi
+function toggleInfoBox(boxId) {
+  var infoBox = document.getElementById(boxId);
+  if (infoBox.classList.contains('hidden')) {
+    infoBox.classList.remove('hidden');
+    infoBox.classList.add('show');
+    
+    // Jika infoBox3 yang dibuka, mulai animasi angka
+    if (boxId === 'infoBox3') {
+      animateNumber();
+    }
+  } else {
+    infoBox.classList.remove('show');
+    infoBox.classList.add('hidden');
+  }
+}
+
+// Fungsi untuk animasi angka dari 1 ke 1000
+function animateNumber() {
+  const numberElement = document.getElementById('animatedNumber');
+  let currentNumber = 1000;
+  
+  const interval = setInterval(() => {
+    if (currentNumber < 1200) {
+      currentNumber++;
+      numberElement.textContent = currentNumber;
+    } else {
+      clearInterval(interval); // Hentikan interval saat angka mencapai 1000
+    }
+  }, 0.1); // Mengubah angka setiap 1 milidetik
+}
+
     </script>
 </body>
 </html>
