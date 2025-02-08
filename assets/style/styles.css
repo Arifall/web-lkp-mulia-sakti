@@ -153,7 +153,7 @@ nav a:hover {
     border: 2px solid white;
 }
 .keunggulan {
-    background-color: #030e1f;
+    background-color: #021024;
     color: whitesmoke;
 
     height: auto;
@@ -190,7 +190,7 @@ nav a:hover {
 }
 .peta {
     height: auto;
-    background-color: #030e1f;
+    background-color: #021024;
     color: white;
     display: flex;
     align-items: center;
@@ -448,7 +448,7 @@ footer .hakcipta {
         width: 350px;
     }
     .daftar li {
-        width: 380px;
+        max-width: 360px;
         gap: 15px;
     }
     .peta h1 {
