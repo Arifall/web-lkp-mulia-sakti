@@ -71,7 +71,7 @@ nav li{
 }
 header {
     width: 100%;
-    height: 13vh;
+    height: 11vh;
     padding-left: 20px;
     padding-block: 1rem;
     margin-inline: auto;
@@ -209,7 +209,7 @@ button:hover {
 }
 /*konten utama-finish*/
 footer {
-    background-color: #0a4091;
+    background-color: rgb(10, 64, 145);
     width: 100%;
 }
 footer article img {
