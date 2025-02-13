@@ -123,7 +123,7 @@ nav a:hover {
     width: 100%;
     height: 200px;
     background-size: 100% 100%;
-    background-image: url(/assets/img/freepik__expand__21245.png);
+    background-image: url(/assets/img/freepik__adjust__12526.png);
 }
 .profil {
     display: flex;
@@ -187,7 +187,7 @@ nav a:hover {
   #animatedNumber {
     font-size: 36px;
     font-weight: bold;
-    color: #0c264d; /* Warna biru untuk angka */
+    color: #0c264d;
     margin-top: 15px;
   }
   h3, p {
@@ -248,8 +248,20 @@ footer {
     width: 100%;
     margin-top: 70px;
 }
+.logo-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logo-footer h1 {
+    line-height: 0.8cm;
+    font-weight: 600;
+    padding-left: 10px;
+}
 footer article img {
     width:80px;
+    padding-right: 10px;
+    border-right: 2px solid white;
 }
 footer article {
     display: flex;
@@ -275,7 +287,7 @@ footer .hakcipta {
    
 }
 .daftar-footer h1{
-    font-size: 22px;
+    font-size: 20px;
     line-height: 0.8cm;
 }
 .daftar-footer h2 {

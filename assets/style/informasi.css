@@ -172,14 +172,29 @@ aside a button:hover {
     box-shadow: -4px 4px #05064b;
     transition: all 0.3s ease-in-out;
 }
+aside a button:active {
+    background-color: #f7a000;
+}
 /*konten utama-finish*/
 footer {
     background-color: #0a4091;
     width: 100%;
     margin-top: 70px;
 }
+.logo-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logo-footer h1 {
+    line-height: 0.8cm;
+    font-weight: 600;
+    padding-left: 10px;
+}
 footer article img {
     width:80px;
+    padding-right: 10px;
+    border-right: 2px solid white;
 }
 footer article {
     display: flex;
@@ -205,7 +220,7 @@ footer .hakcipta {
    
 }
 .daftar-footer h1{
-    font-size: 22px;
+    font-size: 20px;
     line-height: 0.8cm;
 }
 .daftar-footer h2 {

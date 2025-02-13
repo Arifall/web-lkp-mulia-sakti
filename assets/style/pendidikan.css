@@ -212,8 +212,20 @@ footer {
     background-color: rgb(10, 64, 145);
     width: 100%;
 }
+.logo-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logo-footer h1 {
+    line-height: 0.8cm;
+    font-weight: 600;
+    padding-left: 10px;
+}
 footer article img {
     width:80px;
+    padding-right: 10px;
+    border-right: 2px solid white;
 }
 footer article {
     display: flex;
@@ -239,7 +251,7 @@ footer .hakcipta {
    
 }
 .daftar-footer h1{
-    font-size: 22px;
+    font-size: 20px;
     line-height: 0.8cm;
 }
 .daftar-footer h2 {
